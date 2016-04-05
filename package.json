@@ -1,0 +1,29 @@
+{
+  "name": "cumono",
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "coffee-script": "^1.10.0",
+    "bunyan": "^1.8.0",
+    "codo": "^2.1.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "serve-favicon": "^2.3.0",
+    "protobufjs": "^5.0.1",
+    "sequelize": "^3.20.0",
+    "sequelize-cli": "^2.3.1"
+  },
+  "version": "1.0.0",
+  "description": "Rails like MVC framework for node.js based on Sequelize(M) Angular(V) Express(C/P), written with Coffeescript for OOP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/tianhsky/cumono"
+  },
+  "author": "Tianyu Huang <tianhsky@gmail.com>",
+  "license": "MIT"
+}
