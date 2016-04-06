@@ -54,7 +54,7 @@ class CMSequelizeImporter
     fs.readdirSync(dir).filter((file) ->
       file.indexOf('.') != 0
     ).forEach (file) ->
-      model = db.sequelize.import(path.join(dir, file) )
+      model = db.sequelize.import(path.join(dir, file))
       if model
         db[model.name] = model
         model.modelRegister(model)

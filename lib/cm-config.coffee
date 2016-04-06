@@ -20,4 +20,7 @@ class CmConfig
   modelsPath: ->
     p = path.join(@appRoot, '/app/models')
 
+  protobufsPath: ->
+    p = path.join(@appRoot, '/app/protobufs')
+
 module.exports = CmConfig
