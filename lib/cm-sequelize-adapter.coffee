@@ -35,12 +35,13 @@ class CmSequelizeAdapter
 
   getInstanceMethods: ->
     instanceMethods = {}
-    excludeMethods = []
+    excludeMethods = ["constructor"]
     # excludeMethods = excludeMethods.concat(Object.getOwnPropertyNames(CmModel.prototype))
     names = Object.getOwnPropertyNames(@model.prototype)
     for name in names
       if name not in excludeMethods
         instanceMethods[name] = @model.prototype[name]
     instanceMethods
+
 
 module.exports = CmSequelizeAdapter
